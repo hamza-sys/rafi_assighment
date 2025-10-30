@@ -91,4 +91,4 @@ print('Student ID - 100536294')
 
 
 # reflection
-# I solved this problem by step by step. first of all i define a separate function for calculating the euclidean distance between two points. I choose to define a separate function for finding the distances as i could solved it right in the classifyFlower function but writing a separate function for this is make my code more cleaner and moduler. It looks difficult at the first to do sorting manually but i understand the problem and make it happen.
+# I solved this problem step by step. first of all i define a separate function for calculating the euclidean distance between two points. I choose to define a separate function for finding the distances as i could solved it right in the classifyFlower function but writing a separate function for this is make my code more cleaner and moduler. It looks difficult at the first to do sorting manually but i understand the problem and make it happen.
