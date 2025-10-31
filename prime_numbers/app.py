@@ -78,3 +78,6 @@ def identify_primes():
 
 result = identify_primes()
 print(result)
+print('Student ID - 100536294')
+
+# I wrote this program according to the instructions given in the question, handling inputs and validating them without using try-except statements, and checking each input to ensure it meets the required criteria. I faced no difficulties while writing this program, as the instructions were clear about what to do and how to do it. The program can be further improved by removing some of the restrictions mentioned in the question, allowing for more flexible solutions based on specific needs.

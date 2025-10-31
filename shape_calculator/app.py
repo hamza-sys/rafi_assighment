@@ -128,6 +128,7 @@ def showOptions():
         except:
             print("Input must be a number")
 
+    print('Student ID - 100536294')
     print("You want another calculation? if so then enter 'Y'")
 
     user_choice2 = input('Enter Y to proceed otherwise press any key other than y or press to cancel: ')
@@ -139,3 +140,5 @@ def showOptions():
 
 # show menu options to user
 showOptions()
+
+# I wrote this program as the starting point of object-oriented programming. It was fun using classes in my program. The instructions were clear, and I made the program work according to them. I faced no difficulties while coding this program and used a lot of math in it. I coded in my own way since there were no restrictions or specific instructions on how to solve the problem.

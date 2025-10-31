@@ -3,15 +3,17 @@ def process_numbers():
     numbers = []
 
     while True:
-        user_input = input('Enter number: ')
-
-        if user_input.isdigit():
-            number = int(user_input)
-            numbers.append(number)
-        else:
-            if int(user_input) < 0:
-                print("The list is completed.")
+        try:
+            # taking input for the user
+            user_input = float(input('Enter number: '))
+            if user_input > 0:
+                number = int(user_input)
+                numbers.append(number)
+            if user_input < 0:
+                print("The list is completed")
                 break
+        except ValueError:
+            print("Enter Number only")
 
     # find the smallest number in number
     smallest_number = min(numbers)
@@ -32,6 +34,7 @@ def process_numbers():
     print(numbers)
     print('Minimum number is ' + str(smallest_number))    
     print(reversed_list)
+    print('Student ID - 100536294')
 
     print("\nMenu:")
     print("1. Add new numbers to the list")
@@ -48,13 +51,14 @@ def process_numbers():
             print('The updated list is ' + str(numbers))
         else:
             print('invalid number')
+
     #   remove number from the list
     elif choice == '2':
-        usr_num = input('Enter number to add to the list ')
+        usr_num = input('Enter number to remove to the list ')
         if usr_num.isdigit():
             if int(usr_num) in numbers:
                 numbers = [n for n in numbers if n != int(usr_num)]
-                print('number removed')
+                print('number removed successfully.')
                 print('the updated list is ' + str(numbers))
             else:
                 print('Number not found in the list')
@@ -65,3 +69,6 @@ def process_numbers():
 
 
 process_numbers()
+
+
+# I wrote this program using the same strategy as in the previous question, keeping the code simple and doing everything in a very basic way. The program can be improved by using Python’s built-in features and methods. It could also be enhanced by creating a function that encapsulates the logic for adding and removing items from the list at the end of the program, but I decided to keep it as it is.

@@ -13,11 +13,11 @@ def student_grades(std_grads):
 
         print(sum_of_all_students_grades)
         
-        #  find the average of grades
         grades = std_grads.values()
         sum_of_grades = sum(grades)
         length_of_grades = len(grades)
 
+        #  find the average of grades
         average_grade = sum_of_all_students_grades / length_of_grades
         print(average_grade)
 
@@ -56,3 +56,4 @@ sg = {
 
 result = student_grades(sg)
 print(result)
+print('Student ID - 100536294')

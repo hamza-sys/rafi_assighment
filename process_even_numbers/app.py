@@ -14,6 +14,7 @@ def process_even_numbers():
         start = int(int1)
         end = int(int2)
     
+        # list to store even numbers
         even_numbers = []
         
         # loop to append even numbers to list
@@ -38,6 +39,7 @@ def process_even_numbers():
         }
 
         print(even_numbers_data)
+        print('Student ID - 100536294')
 
         run_programme_again = input('if you want to run the programme with a new pair of numbers press Y')
 
@@ -51,3 +53,7 @@ def process_even_numbers():
 
 
 process_even_numbers()
+
+
+# I wrote this program in a very basic way, handling input validation manually without using any of Python’s built-in methods. It follows a step-by-step approach without using try and except.
+# This program can be improved by leveraging the full power of Python — using its built-in methods and language features.
