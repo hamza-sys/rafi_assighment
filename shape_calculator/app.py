@@ -3,9 +3,11 @@ import math
 
 # create shapeCalculator class
 class ShapeCalculator:
+    # method to calculate the area and circumference of a circle
     def circle(self):
         while True:
             try:
+                # take user input
                 radius = float(input("Enter the radius: "))
                 if radius > 0:
                     area = math.pi * radius ** 2
@@ -17,6 +19,8 @@ class ShapeCalculator:
             except ValueError:
                 print("Invalid input. Please enter a number.")
 
+    # method to calculate the area and perimeter of a rectangle
+    # also find if the rectangle is a square or not
     def rectangle(self):
         while True:
             try:
@@ -35,6 +39,7 @@ class ShapeCalculator:
             except ValueError:
                 print("Invalid input. Please enter numeric values only.\n")
 
+    # method to calculate the area and perimeter of a triangle
     def triangle(self):
         while True:
             try:
@@ -69,6 +74,7 @@ class ShapeCalculator:
             except ValueError:
                 print("Invalid input. Please enter numeric values only.")
 
+    # method for finding the larger area or if they are equal
     def compare_circles(self):
          while True:
             try:
@@ -96,6 +102,7 @@ class ShapeCalculator:
 # create instance of ShapeCalculator
 sc = ShapeCalculator()
 
+# method for showing menu and taking input from the user
 def showOptions():
     print("choose a number from below to continue")
     print("Option 1: Circle")
@@ -108,6 +115,7 @@ def showOptions():
         try:
             user_choice = float(input("Enter a number from 1 to 5: "))
 
+            # processing user input to show the correct options
             if 1 <= user_choice <= 5:
                 if user_choice == 1:
                     sc.circle()

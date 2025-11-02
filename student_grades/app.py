@@ -1,6 +1,6 @@
 
+# the main function to handle student grades
 def student_grades(std_grads):
-
     if std_grads:
         # count the total students
         total_students = len(std_grads)

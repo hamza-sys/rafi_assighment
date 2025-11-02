@@ -1,6 +1,7 @@
 # create an empty dictionary
 even_numbers_data = {}
 
+# the main function to handle all logic for processing even numbers
 def process_even_numbers():
     # Ask user for input
     int1 = input("Enter Integer1: ")
@@ -32,6 +33,7 @@ def process_even_numbers():
 
         startEndNumbers = (start, end)
 
+        # store result in the dictionary
         even_numbers_data[startEndNumbers] = {
             "sum": sum(even_numbers),
             "average": round(sum(even_numbers) / len(even_numbers)),
@@ -41,8 +43,8 @@ def process_even_numbers():
         print(even_numbers_data)
         print('Student ID - 100536294')
 
-        run_programme_again = input('if you want to run the programme with a new pair of numbers press Y')
-
+        #ask the user if he/she wants to run the program again
+        run_programme_again = input('if you want to run the programme with a new pair of numbers press "Y" otherwise press any key other than "Y".')
         if run_programme_again.lower() == "Y".lower():
             process_even_numbers()
 
@@ -50,8 +52,7 @@ def process_even_numbers():
        print('Enter Numbers only')
        return process_even_numbers()
 
-
-
+# calling the process_even_numbers function
 process_even_numbers()
 
 

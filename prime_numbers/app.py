@@ -1,6 +1,7 @@
-
+# store the user entered numbers
 numbers = []
 
+# function to check if the number is prime
 def is_prime(n):
     if n <= 1:
         return False
@@ -13,9 +14,8 @@ def is_prime(n):
             return False
     return True
 
-
+# function to write all logic to identify the prime number
 def identify_primes():
-
     # ask the user for input    
     print('Enter a positive integer. Type "finish" to stop.')
 
@@ -44,7 +44,7 @@ def identify_primes():
             smallest = primes[0]
             largest = primes[0]
 
-            # Loop through the list to find smallest and largest
+            # Loop through the list to find smallest and largest prime numbers
             for num in primes:
                 if num < smallest:
                     smallest = num
@@ -57,10 +57,12 @@ def identify_primes():
             print('Total numbers entered by user are ' + str(numbers))
             print('Total prime numbers are ' + str(primes))
 
+            # calculate the sum of all prime number
             sum_of_all_primes = 0
             for n in primes:
                 sum_of_all_primes += n
 
+            # return the result
             return {
                     'all numbers': numbers,
                     'primes': primes,
@@ -70,11 +72,8 @@ def identify_primes():
                     'min_prime': smallest,
                      'max_prime': largest
                     }
-        
     else:
         print('No prime numbers were entered.')
-
-
 
 result = identify_primes()
 print(result)

@@ -1,4 +1,6 @@
 
+# create function to process user entered numbers
+# checking for the smallest number, reverse the numbers and finding duplicates
 def process_numbers():
     numbers = []
 
@@ -36,6 +38,7 @@ def process_numbers():
     print(reversed_list)
     print('Student ID - 100536294')
 
+    # showing menu to the user
     print("\nMenu:")
     print("1. Add new numbers to the list")
     print("2. Remove a number from the list")
@@ -65,9 +68,7 @@ def process_numbers():
         else:
             print('Enter a valid Number')
 
-
-
-
+# calling the function
 process_numbers()
 
 

@@ -92,6 +92,6 @@ def main():
 
 main()
 
-# First of all, I use one external library called feedparser for parsing the articles. I install it using pip with the following command: pip install feedparser. I also use the built-in datetime module, which does not require any installation.
+# First of all, I use one external library called feedparser for parsing the articles. I install it using pip with the following command: pip install feedparser. I also use the built-in datetime module, which does not require any external installation.
 
 # I wrote this program according to the instructions given to me, starting simply by creating a class and defining object properties with getter methods for each attribute. This is a part of the code where I can code freely without hesitation because I have the flexibility to implement it in my own way without restrictions. For example, in the beginning, I had to handle errors without using try-except, among other requirements. However, I used most of the methods and properties provided by the language. I faced no difficulties while writing the program.
